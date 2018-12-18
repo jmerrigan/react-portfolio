@@ -176,6 +176,63 @@ body {
   width: 330px;
 }
 
+#contactPage {
+  margin: 0 auto;
+  height: 70vh;
+  background: #2B5495;
+  text-align: center;
+  color: white;
+}
+
+#contactTitle {
+  padding: 40px;
+}
+
+#contactTitle h2 {
+  margin: 0;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formField {
+  
+  width: 30vw;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  border-bottom: 1px solid orange;
+  margin-bottom: 15px;
+
+}
+
+input {
+  height: 45px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+form .submit {
+  background: orange;
+  border-color: transparent;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+
+form .submit:hover {
+  background: lightcoral;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
 
   #welcomeMessage {
