@@ -96,6 +96,12 @@ body {
   margin-top: 25vh;
 }
 
+#aboutSkills {
+  margin-top: 50vh;
+  max-width: 35vw;
+  margin-right: 35vw;
+}
+
 
 .socialIcons {
   color: burlywood;
@@ -138,6 +144,31 @@ body {
   max-width: 30vw;
 }
 
+#projectContainer {
+  height: 80vh;
+  width: 100%;
+  background: #10336B;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectCard {
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  padding: 30px;
+  
+  
+}
+
+.projectCard img {
+  height: 169px;
+  width: 330px;
+}
+
 @media (max-width: 768px) {
 
   #welcomeMessage {
@@ -172,10 +203,17 @@ body {
     margin-top: 0;
     margin-left: 30px;
     max-width: 50vw;
+  }
 
+  #projectContainer {
+    height: 100%;
+    flex-direction: column;
+    padding-top: 20px;
   }
 
 }
+
+
 
 
 /* ----------------------------------------------

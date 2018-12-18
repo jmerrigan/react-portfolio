@@ -3,6 +3,7 @@ import Landingpage from './Landingpage'
 import Navbar from './Navbar'
 import AboutPage from './AboutPage'
 import Skills from './Skills'
+import Projects from './Projects'
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           </div>
           <AboutPage/>
           <Skills />
+          <Projects />
         </div>
       );
     
