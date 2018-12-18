@@ -11,6 +11,10 @@ class Navbar extends Component {
         scroll.scrollToBottom();
       }
 
+    scrollToAbout(){
+        scroll.scrollTo('skillsContainer')
+    }
+
 
     render() {
         return (
@@ -19,8 +23,9 @@ class Navbar extends Component {
                     <a href="/" id="nameAnchor"> James./Merrigan</a>
                 </div>
                 <div className="headerRight">
-                    <a onClick={this.scrollToBottom} >About</a>
-                    <a href="/">Resume</a>
+                    <a onClick={this.scrollToAbout} >About</a>
+                    <a href="/">Skills</a>
+                    <a href="/">Contact</a>
                 </div>
            </div>
         )
