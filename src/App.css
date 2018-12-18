@@ -115,8 +115,7 @@ body {
   animation: bounce-top 1s both;
 
 }
-
-.socialIcons a:visited {
+.socialIcons a {
   color: orange;
 }
 
