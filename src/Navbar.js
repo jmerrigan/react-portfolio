@@ -1,18 +1,30 @@
 import React, {Component} from 'react';
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
  
  
 
 
 class Navbar extends Component {
 
-    scrollToBottom() {
-        scroll.scrollToBottom();
-      }
+    
+    scrollToAbout(e){
+        e.preventDefault();
+      document.querySelector(".aboutItems").scrollIntoView({ behavior: 'smooth'});
+    }
 
-    scrollToAbout(){
-        scroll.scrollTo('skillsContainer')
+    scrollToSkills(e){
+        e.preventDefault();
+      document.querySelector("#skillsContainer").scrollIntoView({ behavior: 'smooth'});
+    }
+
+    scrollToProjects(e){
+        e.preventDefault();
+      document.querySelector("#projectContainer").scrollIntoView({ behavior: 'smooth'});
+    }
+
+    scrollToContact(e){
+        e.preventDefault();
+      document.querySelector("#contactPage").scrollIntoView({ behavior: 'smooth'});
     }
 
 
@@ -23,9 +35,10 @@ class Navbar extends Component {
                     <a href="/" id="nameAnchor"> James./Merrigan</a>
                 </div>
                 <div className="headerRight">
-                    <a onClick={this.scrollToAbout} >About</a>
-                    <a href="/">Skills</a>
-                    <a href="/">Contact</a>
+                    <a href="/" onClick={this.scrollToAbout} >About</a>
+                    <a href="/" onClick={this.scrollToSkills}>Skills</a>
+                    <a href="/" onClick={this.scrollToProjects}>Projects</a>
+                    <a href="/" onClick={this.scrollToContact}>Contact</a>
                 </div>
            </div>
         )

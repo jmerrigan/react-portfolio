@@ -150,7 +150,7 @@ body {
 }
 
 #projectContainer {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background: #10336B;
   color: white;
@@ -207,7 +207,7 @@ body {
   outline: none;
   color: white;
   font-size: 14px;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid white;
   margin-bottom: 15px;
 
 }
